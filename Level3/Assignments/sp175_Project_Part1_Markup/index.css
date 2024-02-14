@@ -1,0 +1,5 @@
+html, body {
+    background-color: cyan;
+    margin: 0;
+    padding: 10; /*puts 10 pixels to the left side of page*/
+}
