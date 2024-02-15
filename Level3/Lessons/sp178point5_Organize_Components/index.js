@@ -1,6 +1,10 @@
+//import React from "react"
+//import { Route } from "react-router-dom"
+
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import MainContent from "./components/MainContent"
+
 
 function Page() {
     return (
@@ -12,4 +16,4 @@ function Page() {
     )
 }
 
-ReactDom.render(<Page />, document.getElementById("root"))
+ReactDOM.render(<Page />, document.getElementById("root"))
