@@ -1,9 +1,9 @@
-//import React from "react"
-//import { Route } from "react-router-dom"
-
+import React from "react"
+import ReactDOM from "react-dom/client"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import MainContent from "./components/MainContent"
+import reportWebVitals from "reportWebVitals"
 
 
 function Page() {
@@ -13,7 +13,8 @@ function Page() {
            <MainContent />
            <Footer />
         </div>
-    )
+    );
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"))
+reportWebVitals();
+ReactDOM.createRoot(document.getElementById("root")).render
