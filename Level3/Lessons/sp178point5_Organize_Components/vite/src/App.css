@@ -1,3 +1,7 @@
+html, body {
+  background-color: teal;
+}
+
 .nav {                                  /*styling for navigation bar*/
   display: flex;                      /*displays .nav across the top and allows automatically adjusts.*/
   justify-content: space-between;     /*Creates spacing between the items.*/
