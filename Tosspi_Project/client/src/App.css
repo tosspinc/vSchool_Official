@@ -1,0 +1,32 @@
+html, body {
+  background-color: teal;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.nav-logo {
+  height: 40px;
+  padding: 5px;
+}
+
+.footer {                               /*styling for footer on DOM*/
+  text-align: center;                 /*text placement is centere at the bottom of the DOM.*/
+  color: antiquewhite;              /*text color*/
+  position: absolute;
+  right: 0px;
+  bottom: 0px;                        /*places the footer at the bottom of the DOM.*/
+  width: 100%;                        /*sets width of footer in DOM.*/
+  height: 30px;                       /*sets height of footer in DOM.*/
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
