@@ -10,7 +10,6 @@ function App() {
     <>
       <div className='container'>
         <Header />
-        <h1>Tosspi - The One Stop Shopping Place Inc. My project page.</h1>
         <MainContent />
         <Footer />
       </div>

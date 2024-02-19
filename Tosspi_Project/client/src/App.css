@@ -1,60 +1,74 @@
-html, body {
-  background-color: teal;
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
 }
 
 #root {
-  
   margin: 0;
   padding: 0;
   max-width: 100%;
   text-align: center;
 }
 
-/*top row of navigation bar*/
+/*back row of navigation bar*/
 .navbar-belt {                        
-  margin-top: 0;
+  margin-top: 5px;
+  margin-left: 5px;
   padding: 0;
-  height: 77px;
-  width: device-width;
-  background-color: rgb(33, 32, 32);
+  height: 110px;
+  width: 100%;
+  background-color: rgb(72, 32, 32);
 }
 
-/*second row of navigation bar*/
+/*top row of navigation bar*/
 .navbar-main {
-  margin-top: 0;
-  height: 45px;
-  width: device-width;
-  background-color: rgb(21, 18, 18);
+  margin-top: 5px;
+  margin-left: 0;
+  padding: 0;
+  height: 58px;
+  width: 100%;
+  background-color: olive;
 }
 
 .nav-logo {
   margin-top: 2px;
   margin-right: 10px;
   margin-bottom: 4px;
-  margin-left: 10px;
-  height: 37px;
-  padding: 3px;
+  margin-left: 0;
+  height: 50px;
+  padding: 0;
   float: left;  
+  background-color: olive;
+}
+
+.tosspi-bag-logo {
+  background-color: olive;  
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  height: 47px;
+  width: 50px;
+  padding: 0;
+  float: left;
 }
 
 .container {
   margin: 0;
   height: 900px;
+  width: 100%;
 }
 
-.footer {                               /*styling for footer on DOM*/
+.footer {                             /*styling for footer on DOM*/
+  padding: 0;
   text-align: center;                 /*text placement is centere at the bottom of the DOM.*/
   color: antiquewhite;              /*text color*/
-  position: absolute;
-  right: 0px;
-  bottom: 0px;                        /*places the footer at the bottom of the DOM.*/
+  background-color: rgb(72, 32, 32);/*background color in the footer.*/
+  position: absolute;                 
+  bottom: 2px;                        /*places the footer at the bottom of the DOM.*/
   width: 100%;                        /*sets width of footer in DOM.*/
-  height: 30px;                       /*sets height of footer in DOM.*/
+  height: 60px;                       /*sets height of footer in DOM.*/
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
