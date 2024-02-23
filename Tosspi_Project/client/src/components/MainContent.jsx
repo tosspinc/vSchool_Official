@@ -1,16 +1,15 @@
 import React from "react"
+import Carousel from "./Card"
+import Card from "./Card"
+import Contacts from "./Contacts"
 
 export default function MainContent() {
     return (
         <div className="maincontent--info">
-            <h1 className="maincontent--title">Fun facts about React.</h1>
-            <ul className="maincontent--facts">
-                <li>was first released in 2013.</li>
-                <li>Originally created by Jordan Walke.</li>
-                <li>Has well over 100K stars on GitHub.</li>
-                <li>Maintained by Facebook.</li>
-                <li>Powers thousands of enterprise apps, including mobile apps.</li>
-            </ul>
-        </div>
+            <h1 className="maincontent--title">Level 3 React project!</h1>
+            <h2>Working on class project.</h2>
+            <Card />
+            <Contacts />
+       </div>
     )
 }

@@ -1,0 +1,27 @@
+{
+    "slides": [ {
+            "src": "./imgs/product-category/toys.jpg/img1/800/400",  
+            "alt": "toys image"
+        },
+        {
+            "src": "./imgs/product-category/pets.png/img2/800/400",  
+            "alt": "pets image"
+        },
+        {
+            "src": "./imgs/product-category/sports.jpg/img3/800/400",  
+            "alt": "sports image"
+        },
+        {
+            "src": "./imgs/product-category/tools.jpg/img4/800/400",  
+            "alt": "tools image"
+        },
+        {
+            "src": "./imgs/product-category/kids.png/img5/800/400",  
+            "alt": "kids image"
+        },
+        {
+            "src": "./imgs/product-category/outdoors.jpg/img6/800/400",  
+            "alt": "outdoors image"
+        }
+    ]
+}
