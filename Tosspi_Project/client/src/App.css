@@ -18,7 +18,7 @@
   padding: 0;
   height: 110px;
   width: 100%;
-  background-color: rgb(72, 32, 32);
+  background-color: antiquewhite;
   position: 100%;                 
   top: 0;    
 }
@@ -30,7 +30,7 @@
   padding: 0;
   height: 58px;
   width: 100%;
-  background-color: olive;
+  background-color: rgb(48, 213, 200);
 }
 
 .nav-logo {
@@ -41,11 +41,11 @@
   height: 50px;
   padding: 0;
   float: left;  
-  background-color: olive;
+  background-color: rgb(48, 213, 200);
 }
 
 .tosspi-bag-logo {
-  background-color: olive;  
+  background-color: rgb(48, 213, 200);
   margin-top: 5px;
   margin-right: 10px;
   margin-bottom: 2px;
@@ -73,8 +73,8 @@
 .footer {                             /*styling for footer on DOM*/
   padding: 0;
   text-align: center;                 /*text placement is centere at the bottom of the DOM.*/
-  color: antiquewhite;                /*text color*/
-  background-color: rgb(72, 32, 32);
+  color: black;                     /*text color*/
+  background-color: rgb(48, 213, 200);
   position: absolute;                 
   bottom: 2px;                        /*places the footer at the bottom of the DOM.*/
   width: 100%;                        /*sets width of footer in DOM.*/
