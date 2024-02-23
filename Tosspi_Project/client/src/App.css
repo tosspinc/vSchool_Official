@@ -14,19 +14,18 @@
 
 /*back row of navigation bar*/
 .navbar-belt {                        
-  margin-top: 5px;
-  /* margin-left: 5px; */
+  margin-top: 0;
   padding: 0;
   height: 110px;
   width: 100%;
   background-color: rgb(72, 32, 32);
-  position: absolute;                 
+  position: 100%;                 
   top: 0;    
 }
 
 /*top row of navigation bar*/
 .navbar-main {
-  margin-top: 5px;
+  margin-top: 0;
   margin-left: 0;
   padding: 0;
   height: 58px;
@@ -63,15 +62,19 @@
   width: 100%;
 }
 
-.maincontent {
-  background-color: antiquewhite;
-  margin-top: 110
+.maincontent--facts > li {
+  padding-block: 5px;
+}
+
+.maincontent--facts > li::marker {    /*for each line under the Listed Items.*/
+  font-size: 1.5rem;                  /*sets font size to 1.5x larger than default setting.*/
+}
 
 .footer {                             /*styling for footer on DOM*/
   padding: 0;
   text-align: center;                 /*text placement is centere at the bottom of the DOM.*/
-  color: antiquewhite;              /*text color*/
-  background-color: rgb(72, 32, 32);/*background color in the footer.*/
+  color: antiquewhite;                /*text color*/
+  background-color: rgb(72, 32, 32);
   position: absolute;                 
   bottom: 2px;                        /*places the footer at the bottom of the DOM.*/
   width: 100%;                        /*sets width of footer in DOM.*/
