@@ -7,7 +7,7 @@ export default function Contacts() {
                 <img src="./imgs/Contact-Info/Matt-Jones-Headshot.jpg" alt="MJPic" className="MJ-Headshot" />
                 <h3 className="ContactText">Mr. Arnold Jones</h3>
                 <div className="PhoneNumber">
-                   <img src="./imgs/Contact-Info/phone-contact.jpg" alt="Phone-pic" className="Phone-Pic" />
+                   <img src="./imgs/Contact-Info/phone-contact.png" alt="Phone-pic" className="Phone-Pic" />
                    <p className="ContactText">(801) 347-5153</p>
                    <div className="EmailContact">
                        <img src="./imgs/Contact-Info/Email-contact.png" alt="Email-pic" className="Email-Pic" />

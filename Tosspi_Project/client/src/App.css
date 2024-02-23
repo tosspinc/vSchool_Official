@@ -95,48 +95,53 @@
 
 /*product card and its related components*/
 .card {
-  background-color: rgb(48, 213, 200);
+  background-color: antiquewhite;
+  border-radius: 15px;
   margin-top: 80px;
+  margin-bottom: 15px;
   margin-left: 125px;
   width: 300px;
-  height: 450px;
-  font-size: 14px;
+  height: 300px;
+  font-size: 13px;
 }
 
 .gray {
-  color: gray;
+  margin-top: 5px;
+  margin-left: 4px;
+  color: black;
+  font-size: 13px;
 }
 
 .card-tool-image {
-  width: 100%;
-  border-radius: 12px;
-
+  margin-top: 15px;
+  border-radius: 15px;
+  height: 180px;
+  width: 180px;
 }
 
 .card-reviews {
   display: flex;
-  align-items: center;
-  margin-left: 100px;
-}
+  margin-top: 10px;
+  margin-left: 105px;
+  }
 
 .item-description {
   font-weight: bold;
-  margin-left: 75px;
+  margin-left: 5px;
   align-items: center;
 }
 
 .item-pricing {
-  margin-left: 75px;
+  margin-left: 5px;
   align-items: center;
 }
 
 .five-star-review {
-  background-color: rgb(48, 213, 200);
-  display: flex;
-  align-items: center;
+  background-color: antiquewhite;
+  margin-left: 0;
   margin-top: 0;
-  width: 100px;
-  height: 50px;
+  width: 60px;
+  height: 30px;
 }
 
 /*Contact info css styling in maincontent area.*/
@@ -151,7 +156,7 @@
   border-radius: 10px;
   border-color: black;
   border-width: 5px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 10px;
   padding-bottom: 10px;
 }
@@ -163,23 +168,23 @@
 }
 
 .Phone-Pic {
-  background-color: antiquewhite;
+  background-color: rgb(48, 213, 200);
   padding: 0;
-  margin-top: 3px;
-  margin-left: 5px;
-  height: 15px;
-  width: 15px;
+  margin-top: 1px;
+  margin-left: 0;
+  height: 17px;
+  width: 17px;
   float: left;
 }
 
 .Email-Pic {
-  background-color: antiquewhite;
+  background-color: rgb(48, 213, 200);
   padding: 0;
-  margin-top: 3px;
-  margin-left: 5px;
+  margin-top: 1px;
+  margin-left: 0;
   margin-right: 0;
-  height: 15px;
-  width: 15px;
+  height: 17px;
+  width: 17px;
   float: left;
 }
 
@@ -187,6 +192,7 @@
   padding: 0;
   font-size: 12px;
   font-weight: bold;
+  margin-right: 0;
   margin-left: 0;
 }
 
