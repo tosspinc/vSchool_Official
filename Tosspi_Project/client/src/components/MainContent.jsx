@@ -9,7 +9,6 @@ export default function MainContent() {
             <h1 className="maincontent--title">Level 3 React project!</h1>
             <h2>Working on class project.</h2>
             <Card 
-                img='tools.jpg'
                 ratings="5.0"
                 reviewCount={6}
                 title="Everyday Tools"
