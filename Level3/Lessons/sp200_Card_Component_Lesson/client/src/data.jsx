@@ -35,7 +35,7 @@ export default [
             rating: 4.8,
             reviewCount: 2
         },
-        location: "Online",
+        location: "USA",
         openSpots: 3,
     }
 ]
