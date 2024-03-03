@@ -13,4 +13,4 @@ export default function Card(props) {
             <p><span className="item-pricing">starting at $ {props.price}.00 Each.</span></p>
         </div>
     )
-}
+}   
