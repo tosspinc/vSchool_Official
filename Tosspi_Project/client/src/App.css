@@ -1,45 +1,38 @@
-/*Navigation bar styling*/
-.navbar-header {                        
-  margin-top: 0;
-  padding: 0;
-  height: 120px;
-  width: 100%;
-  background-color: antiquewhite;
-  position: 100%;                 
-  top: 0;    
-}
-
 /*top row of navigation bar*/
-.navbar-main {
+.navbar-top {
   margin-top: 0;
   margin-left: 0;
   padding: 0;
-  height: 58px;
+  height: 60px;
   width: 100%;
   background-color: rgb(48, 213, 200);
 }
 
+
+/*Navigation search bar*/
+nav .all {
+  margin-top: 10px;
+  background-color: #ddd;
+  border-radius: 5px 0 0 5px;
+}
+
 nav input {
-  width: 760px;
+  flex: 1;
   padding: 10px;
   font-size: 17px;
-  border: none;
+  width: 500px;
   outline: none;
   color: #000;
 }
 
 nav button {
-  padding: 10px 10px;
+  padding: 10px 17px;
   color: #000;
   font-size: 17px;
   border: none;
+  outline: none;
   border-radius: 5px 0 0 5px;
   cursor: pointer;  
-}
-
-nav .all {
-  background-color: #ddd;
-  border-radius: 5px 0 0 5px;
 }
 
 nav .search {
@@ -47,20 +40,23 @@ nav .search {
   margin: -2px;
   background-color: rgb(48, 213, 200);
   border-radius: 0 5px 5px 0;
-} 
-
-.nav-left {
-  display: flex;
+  border: 5px #000;
 }
 
-.nav-search {
-  display: flex;
-}
 
-.nav-right {
-  display: flex;
-}
+/*bottom row of navigation bar*/
+.navbar-bottom {
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+  height: 58px;
+  width: 100%;
+  background-color: antiquewhite;
 
+}
+.navright-login {
+  margin-left: 0;
+}
 
 .item {
   padding: 10px 10px;
@@ -109,17 +105,7 @@ h5 {
 }
 
 /*images*/
-.nav-logo {
-  margin-top: 2px;
-  margin-right: 10px;
-  margin-bottom: 4px;
-  margin-left: 0;
-  height: 50px;
-  padding: 0;
-  float: left;  
-  background-color: rgb(48, 213, 200);
-}
-
+/*top nav bar images*/
 .tosspi-bag-logo {
   background-color: rgb(48, 213, 200);
   margin-top: 5px;
@@ -132,28 +118,39 @@ h5 {
   float: left;
 }
 
-.flag-usa {
+.tosspi-logo {
+  margin-top: 2px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  margin-left: 0;
   height: 50px;
-  width: 50px;
+  padding: 0;
   background-color: rgb(48, 213, 200);
-}
-
-
-.mens-clothing-pic, .womens-clothing-pic, .toys-pic, .pets-pic, .sports-pic, .tools-pic, .kids-pic, .outdoors-pic {
-  background-color: antiquewhite;
-  margin-top: 65px;
-  margin-right: 6px;
-  height: 40px;
+  float: left;
 }
 
 .login-logo {
-  background-color: rgb(48, 213, 200);
   margin-top: 4px;
-  margin-right: 15px;
+  margin-right: 10px;
   height: 50px;
   width: 50px;
-  float: right;
 }
+ /*bottom nav bar images*/
+/* .mens-clothing-pic, .womens-clothing-pic, .toys-pic, .pets-pic, .sports-pic, .tools-pic, .kids-pic, .outdoors-pic {
+  background-color: antiquewhite;
+  margin-top: 5px;
+  margin-right: 6px;
+  height: 40px;
+} */
+
+/* .view-all-categories-img {
+  background-color: antiquewhite;
+  margin-top: 72px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 25px;
+  height: 35px;
+} */
 
 .MJ-Headshot {
   padding: 0;
@@ -190,16 +187,6 @@ h5 {
   height: 30px;
 }
 
-
-.view-all {
-  background-color: antiquewhite;
-  margin-top: 72px;
-  float: right;
-  margin-left: 10px;
-  margin-right: 25px;
-  height: 35px;
-}
-
 /*MainContent area for css styling.*/
 .container {
   margin: 0;
@@ -210,13 +197,14 @@ h5 {
 
 .maincontent--facts > li {
   padding-block: 5px;
+
 }
 
 /*product card and its related components*/
 .card {
   background-color: antiquewhite;
   border-radius: 15px;
-  margin-top: 80px;
+  margin-top: 70px;
   margin-bottom: 15px;
   margin-left: 125px;
   width: 300px;
@@ -273,6 +261,9 @@ h5 {
   padding-bottom: 10px;
 }
 
+.maincontent--title {
+  padding-top: 100px;
+}
 
 .ContactText {
   padding: 0;

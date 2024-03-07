@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Header from './components/Header.jsx'
+import NavigationBar from './components/NavigationBar.jsx'
 import MainContent from './components/MainContent.jsx'
 import Footer from './components/Footer.jsx'
 
@@ -8,9 +8,9 @@ export default function App() {
   return (
     <>
       <div className='container'>
-        <Header />
-        <MainContent />
-        <Footer />
+        <NavigationBar />
+        {/* <MainContent />
+        <Footer /> */}
       </div>
     </>
   )

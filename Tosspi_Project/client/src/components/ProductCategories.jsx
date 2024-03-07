@@ -11,7 +11,7 @@ export default function ProductCategories() {
             <img src="./imgs/product-categories/tools.jpg" alt="tools" className="tools-pic"/>
             <img src="./imgs/product-categories/pets.png" alt="pets" className="pets-pic"/>
             <img src="./imgs/product-categories/outdoors.jpg" alt="outdoors" className="outdoors-pic"/>
-            <img src="./imgs/product-categories/view-all.png" alt="all" className="view-all" />
+            <img src="./imgs/product-categories/view-all.png" alt="all" className="view-all-categores-img" />
         </product-section>
     )
 }
