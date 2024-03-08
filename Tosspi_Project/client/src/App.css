@@ -1,5 +1,7 @@
 /*top row of navigation bar*/
 .navbar-top {
+  display: flex;
+  justify-content: space-between;
   margin-top: 0;
   margin-left: 0;
   padding: 0;
@@ -9,11 +11,16 @@
 }
 
 
-/*Navigation search bar*/
-nav .all {
+/*Navigation search all button*/
+.all {
   margin-top: 10px;
-  background-color: #ddd;
+  background-color: orange;
+  color: black;
   border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
 nav input {
@@ -22,25 +29,18 @@ nav input {
   font-size: 17px;
   width: 500px;
   outline: none;
+  border: none;
+  background-color: antiquewhite;
   color: #000;
 }
 
-nav button {
-  padding: 10px 17px;
-  color: #000;
-  font-size: 17px;
+nav button.search {
+  background-color: orange;
+  border-radius: 0 5px 5px 0;
   border: none;
   outline: none;
-  border-radius: 5px 0 0 5px;
-  cursor: pointer;  
-}
-
-nav .search {
-  padding: 10px 17px;
-  margin: -2px;
-  background-color: rgb(48, 213, 200);
-  border-radius: 0 5px 5px 0;
-  border: 5px #000;
+  padding: 10px;
+  cursor: 10px;
 }
 
 
@@ -49,13 +49,14 @@ nav .search {
   margin-top: 0;
   margin-left: 0;
   padding: 0;
-  height: 58px;
+  height: 60px;
   width: 100%;
   background-color: antiquewhite;
 
 }
 .navright-login {
-  margin-left: 0;
+  display: flex;
+  align-items: center;
 }
 
 .item {
@@ -131,26 +132,45 @@ h5 {
 
 .login-logo {
   margin-top: 4px;
-  margin-right: 10px;
+  margin-right: 20px;
   height: 50px;
-  width: 50px;
+  width: 100px;
+  margin-left: auto; /*pushes logo img to the right*/
 }
- /*bottom nav bar images*/
-/* .mens-clothing-pic, .womens-clothing-pic, .toys-pic, .pets-pic, .sports-pic, .tools-pic, .kids-pic, .outdoors-pic {
+
+.cart-logo {
+  margin-top: 4px;
+  margin-right: 25px;
+  height: 50px;
+  width: 75px;
+  margin-left: auto;
+  background-color: rgb(48, 213, 200);
+}
+
+.product-categories-logo
+{
+  margin-top: 4px;
+  margin-left: 4px;
+  float: left;
+  height: 50px;
+  width: 200px;
+}
+ 
+/*bottom nav bar images*/
+.mens-clothing-pic, .womens-clothing-pic, .toys-pic, .pets-pic, .sports-pic, .tools-pic, .kids-pic, .outdoors-pic {
   background-color: antiquewhite;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-right: 6px;
   height: 40px;
-} */
+} 
 
-/* .view-all-categories-img {
-  background-color: antiquewhite;
-  margin-top: 72px;
+ .view-all-categories-img {
+  margin-top: 7px;
+  margin-right: 65px;
+  height: 45px;
+  width: 100px;
   float: right;
-  margin-left: 10px;
-  margin-right: 25px;
-  height: 35px;
-} */
+}
 
 .MJ-Headshot {
   padding: 0;
@@ -163,8 +183,7 @@ h5 {
   padding: 0;
   margin-top: 1px;
   margin-left: 0;
-  height: 17px;
-  width: 17px;
+  height: 17px;  width: 17px;
   float: left;
 }
 

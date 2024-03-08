@@ -1,0 +1,72 @@
+/*the main page container for everything*/
+.vs-container {
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: 50%;
+  background-color: burlywood;
+}
+
+.vs-bg-card {
+  border: 3px solid black;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/*vaction information styling*/
+.vacation-info {
+  display: flex;
+  margin-right: 15px;
+}
+
+.vs-photo {
+  margin-right: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/*styling for images*/
+.vsimg {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  height: 150px;
+  width: 300px;
+}
+
+/*area that displays the text info for each place*/
+.vs-info {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 100px;
+ height: 120px;
+ margin-top: 40px;
+ margin-bottom: 30px;
+ margin-left: 20px;
+ background-color: antiquewhite; 
+ line-height: 1.5;
+}
+
+.spring-Style {
+  background-color: lightgreen;
+}
+
+.summer-Style {
+  background-color: lightskyblue;
+}
+
+.fall-Style {
+  background-color: orange;
+}
+
+.winter-Style {
+  background-color: lightslategray;
+}
