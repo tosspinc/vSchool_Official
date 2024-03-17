@@ -1,0 +1,67 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: olivedrab;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  color: antiquewhite;
+  text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /*puts a shadow border around text letters.*/
+  margin: 0;
+}
+
+.dj-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: saddlebrown ;
+  width: 90%;
+  height: 700px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.button-style{
+  display: flex;
+  margin: 40px;
+  height: 40px;
+  width: 100%;
+  max-width: 250px;
+  font-size: 16px;
+  color: black;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainfooter {
+  display: flex;
+  margin-top: auto; /*pushes footer to bottom of page*/
+  width: 100%;
+  background-color: olivedrab;
+  height: 30px;
+  color: antiquewhite;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; /*puts a shadow border around text letters.*/
+}
