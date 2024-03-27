@@ -1,0 +1,226 @@
+
+Level 3: React with Hooks
+Total points
+9/14
+ 
+This quiz will cover JSX, components, props, useState, forms and useEffect
+Email
+*
+arnold.matthew.jones@gmail.com
+Name
+*
+Arnold Jones
+ 
+Given the App component below, what is wrong with the code?
+*
+1/1
+import React from 'react;
+function App(props) {
+return(
+<h1>Hello, there!</h1>
+<p>Welcome to my blog.</p>
+)}
+export default App;
+
+Captionless Image
+Props are received but are not being used
+A component can return only 1 top-level element  - correct
+ReactDOM needs to be imported into the file
+All of the above
+Feedback
+React components must return only one top-level parent element, so this needs to be wrapped in some container element like a <div>. Similarly, a React Fragment can be used (<></>), which can be used in place of a container element to avoid rendering another DOM node to the tree.
+ 
+Which of the following statements about props are true?
+*
+0/3
+1)Props can only be passed from parent to child
+2)Props can be mutated
+3)To pass props from a parent to grandchild component, you have to pass from the parent to child component first, then from child to the grandchild component
+4)You can pass functions as props
+5)Components can only receive a limited number of props
+ 
+Correct answer
+Props can only be passed from parent to child - correct
+To pass props from a parent to grandchild component, you have to pass from the parent to child component first, then from child to the grandchild component 
+You can pass functions as props - correct
+Here is an App component which is rendering a Notification component. Reference this code to answer the question below.
+
+ 
+Select the correct rendering of the props in the Notification component
+*
+1/1
+import React from 'react'
+import Notification from './Notification'
+function App(props) {
+return(
+<div>
+ <Notification messages={{number:3, color: 'red'}}/>	
+</div>
+)}
+
+<p>You have {props.messages.number} unread messages</p>  - Correct
+ 
+
+<p>You have {props.messages} unread messages</p>
+
+<p>You have {props.number} unread messages</p>
+All of these will return an "undefined" error
+Feedback
+An object with 2 properties (number and color) is being passed in as a prop called "messages". So in the Notification component, "props.messages" is an object. To reference the number, you have to use dot notation or destructure the "props.messages" object.
+ 
+What does the useState hook return when called?
+1/1
+The state
+An array with 2 elements - correct
+ 
+An object with 2 properties
+useState does not return anything
+Feedback
+useState always returns an array containing the state value, and its corresponding state update function. In practice, we tend to destructure this array (although not actually necessary, but is best practice) and assign a meaningful name to each element for easier reference.
+ 
+What are the two possible ways of updating the following state?
+*
+0/1
+const [colors, setColors] = useState('purple')
+
+1) Pass in a new state object into setColor() or 2) pass previous state into setColor()
+1) Directly modify "color" by assigning a new color string into it or 2) pass a new color string into setColor()
+1) Directly modify "color" by assigning a new color string into it or 2) pass in a callback function that provides access to the previous state - ****incorrect answer****
+ 
+1) Pass in a new color string into setColor() or 2) pass in a callback function that provides access to the previous state
+is the Correct answer
+1) Pass in a new color string into setColor() or 2) pass in a callback function that provides access to the previous state
+Feedback
+"color" can be updated by:
+1) Passing in a string like into setColor, e.g. setColor("green"). Because "color" is a string, only a string should be passed in and not another data type.
+2) Passing in a callback function to access previous state. This is useful when the new state is dependent on the old state. However, the return value must still be the original data type (string). e.g. to toggle between 2 colors:
+setColor(prevColor => prevColor === "pink" ? "green" : "pink")
+ 
+Which of these is the correct way to update the "street" property in the following "contact" state?
+*
+1/1
+const [contact, setContact] = useState({
+	name: 'john smith',
+	address: {
+		street: '123 blueberry st',
+		zip: '90210',
+		state: 'CA'
+	}
+})
+
+
+Option 1
+ setContact(prevState => ({
+	...prevState,
+	address: {
+		...prevState.address,
+		street: '145 Peach Ave'
+	}
+})) --correct answer.
+
+Option 2
+
+Option 3
+
+Option 4
+Feedback
+"street" is nested inside of the "address" object, so we need to reference contact.address when updating. Everything else in "contact" should be spread using "...prevState" to preserve their values.
+
+Within the "address" object, there are 2 other properties we want to keep the same, so we need to spread them in using "...prevState.address" (not simply "...prevState" because this will copy the whole
+"contact" object over into the "address" object). Then we can simply update the "street" property.
+ 
+What is wrong with the following code?
+*
+1/1
+<button onClick={editItem()}>Submit Edit</button>
+
+You cannot pass an onClick handler into a button, it should be onSubmit instead
+The function editItem() will be immediately invoked upon the component rendering --correct answer.
+ 
+No argument is being passed into editItem()
+None of the above
+Feedback
+Adding "()" to a function name will cause that function to immediately be called, even before the event (click, change, submit, etc) has happened, so only the function name should be passed in like this:
+<button onClick={submitEdit}>
+
+If the function accepts arguments that need to be passed when the function gets called, pass in an anonymous function into the event attribute, like this:
+<button onClick={() => submitEdit(args)}>
+ 
+What is a controlled component?
+*
+1/1
+
+
+It's a component that is rendered by a parent component
+It's a component that only renders props and does not manage its own state
+It's a component whose state controls the input fields of a form -- correct answer.  mostly used with forms.
+ 
+All of the above
+Feedback
+Input fields should be controlled by state. These are known as "controlled components"
+ 
+What is the output of the following code?
+*
+1/1
+function APP(props) {
+const [isLoggedIn, setIsLoggedIn] = useState(false)
+return (
+	<div>
+	{isLoggedIn ? <p>Welcome, user!</p> : <p>Please log in to continue</p>
+
+
+"Welcome, user!"
+"Please log in to continue"  -- correct as it is false.
+ 
+There is a syntax error
+"Welcome, user! Please log in to continue"
+Feedback
+We are conditionally rendering a statement based on the value of "isLoggedIn". "isLoggedIn" is false, so "Please log in to continue" will be rendered.
+ 
+Given this array of "people" in state, select the code block that correctly maps through each person element and passes the data as a prop into the Contact component
+*
+1/1
+const [people, setPeople] = useState([
+{firstName: 'john', number: '7028172039', id: '1'},
+{firstName: 'jane', number: '5013452056', id: '2'},
+{firstName: 'dan', number: '8951230984', id: '3'},
+{firstName: 'alice', number: '3087163058', id: '4'}
+])
+
+Option 1
+
+Option 2
+
+Option 3
+
+Option 4 - correct
+<div> {people.map(person) => {return (contact key={person.id} person={person}/>)})}</div>
+ 
+Feedback
+The map method gives access to each individual person object, called "person", so that gets passed into the "person" prop. It's also important to assign a unique key to avoid any warnings, so we assign "person.id" to "key"
+ 
+Which statement best describes the useEffect hook?
+*
+1/1
+It's used only for making API calls
+It can be used for running side effects after a component renders -- correct 
+ 
+It's used for running code before a component renders
+It's used for updating state
+Feedback
+useEffect() can be used to run some code AFTER a component renders. By default, it will run after every render.
+ 
+What will happen to the component with this useEffect in place?
+*
+0/1
+useEffect(()=>{console.log('hello there')})
+
+"Hello there!" will only be logged to the console during the first render, and not again
+The app will go into an infinite loop  ****correct answer****
+"Hello there!" will be logged to the console at every component render - my choice - incorrect....
+ 
+This will return an error because useEffect accepts only API calls
+Correct answer
+The app will go into an infinite loop
+Feedback
+When no second argument is passed into the useEffect() call, useEffect() will run at every component render. However, no state is being updated, so the app will not go into an infinite loop
