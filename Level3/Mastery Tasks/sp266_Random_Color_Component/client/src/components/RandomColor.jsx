@@ -1,36 +1,23 @@
 import React, { useEffect } from "react";
 
 export default function RandomColor(props) {
-  
+  //set constant variable and equals them to props.
   const { 
     color, 
     fetchRandomColor
    } = props
 
-  
-
-//   const fetchRandomColor = async () => {
-//     try {
-//       const response = await axios.get(`https://random-color.onrender.com/colors/random?timestamp=${new Date().getTime()}`);
-//       console.log(response)
-//       setColor(response.data.color);
-//       return response.data.color; // Return the color value
-//     } catch (error) {
-//       console.error('Error fetching a random color: ', error);
-//       throw error; // Rethrow the error
-//     }
-//   };
-
-useEffect(() => {
+//calls the fetchRandomColor object.
+   useEffect(() => {
     fetchRandomColor();
   }, []);
 
-  console.log('color: ', color);
+  console.log('color: ', color); //test run of color in console
 
   return (
     <div>
       <div className='color-box' style={{ backgroundColor: color}}>
-        Color: {color}
+        Color: {color}   {/*puts the color object in the box called color-box*/}
       </div>
     </div>
   );

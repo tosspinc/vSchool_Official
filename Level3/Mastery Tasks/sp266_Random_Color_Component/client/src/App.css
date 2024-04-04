@@ -1,3 +1,4 @@
+/*primary container to see where things are on page.*/
 .container {
   padding: 20px;
   text-align: center;
@@ -6,6 +7,7 @@
   margin-right: 100px;
 }
 
+/*h1 from index.html at top of page.*/
 .header {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -13,6 +15,7 @@
   font-size: 2em;
 }
 
+/*box for color fetched from axios to be displayed.*/
 .color-box {
   width: 400px;
   height: 200px;
@@ -23,6 +26,7 @@
   align-items: center;
 }
 
+/*button*/
 .teal-button {
   background-color: bisque;
   color: black;
